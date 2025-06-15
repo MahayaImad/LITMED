@@ -1,0 +1,83 @@
+<odoo>
+
+     <record id="view_country_state_tree" model="ir.ui.view">
+        <field name="name">view.res.country.state.tree</field>
+        <field name="model">res.country.state</field>
+        <field name="priority">10</field>
+        <field name="arch" type="xml">
+                <tree string="State">
+                    <field name="code"/>
+                    <field name="name"/>
+                    <field name="country_id" options="{'no_create': True, 'no_open': True}"/>
+                </tree>
+        </field>
+    </record>
+
+
+
+    <record id="view_country_state_form" model="ir.ui.view">
+        <field name="name">view.res.country.state.form</field>
+        <field name="model">res.country.state</field>
+        <field name="priority">10</field>
+        <field name="arch" type="xml">
+            <form string="Sales Order" class="o_sale_order">
+                <sheet>
+                    <group>
+                        <group>
+                            <field name="code"/>
+                            <field name="name"/>
+                            <field name="country_id"/>
+                        </group>
+                    </group>
+                    <notebook>
+                        <page string="Communes">
+                            <field name="commune_ids" string="Communes"/>
+                        </page>
+                    </notebook>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+
+
+    <record id="view_country_state_search" model="ir.ui.view">
+        <field name="name">view.res.country.state.search</field>
+        <field name="model">res.country.state</field>
+        <field name="arch" type="xml">
+            <search string="Country">
+                <filter name="countryalg" string="Algérie" domain="[('country_id', 'ilike', 'Algérie')]" icon="fa-list"/>
+                <field name="name"/>
+                <separator/>
+                <field name="country_id" string="Pays"/>
+                <group string="Group By">
+                    <filter name="groupby_country" string="Pays" context="{'group_by': 'country_id'}"/>
+                </group>
+            </search>
+        </field>
+    </record>
+
+
+    <record id="base.action_country_state" model="ir.actions.act_window">
+        <field name="name">{ "en_US": "Wilaya", "fr_FR": "Wilaya" }</field>
+        <field name="res_model">res.country.state</field>
+        <field name="view_mode">tree,form</field>
+        <field name="search_view_id" ref="view_country_state_search"/>
+        <field name="view_id" ref="view_country_state_tree"/>
+        <field name="context">{"search_default_countryalg":1}</field>
+        <field name="help" type="html">
+            <p class="o_view_nocontent_smiling_face">
+                Create a State
+            </p>
+            <p>
+                Federal States belong to countries and are part of your contacts' addresses.
+            </p>
+        </field>
+    </record>
+
+
+    <record id="contacts.menu_country_group" model="ir.ui.menu">
+        <field name="active">False</field>
+    </record>
+
+</odoo>

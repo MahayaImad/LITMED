@@ -1,0 +1,110 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+#	* infos_fiscales
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 10.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-11-18 19:59+0000\n"
+"PO-Revision-Date: 2016-11-18 19:59+0000\n"
+"Last-Translator: <>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: infos_fiscales
+#: model:ir.model.fields,field_description:infos_fiscales.field_res_commune_code
+msgid "Code Commune"
+msgstr "Code Commune"
+
+#. module: infos_fiscales
+#: model:ir.model.fields,field_description:infos_fiscales.field_res_commune_name
+#: model:ir.model.fields,field_description:infos_fiscales.field_res_partner_commune_id
+#: model:ir.ui.menu,name:infos_fiscales.menu_commune
+#: model:ir.ui.view,arch_db:infos_fiscales.res_partner_form_commune
+msgid "Commune"
+msgstr "Commune"
+
+#. module: infos_fiscales
+#: model:ir.actions.act_window,name:infos_fiscales.action_commune
+msgid "Communes"
+msgstr "Communes"
+
+#. module: infos_fiscales
+#: model:ir.ui.view,arch_db:infos_fiscales.res_partner_form_commune
+msgid "Country"
+msgstr "Pays"
+
+#. module: infos_fiscales
+#: model:ir.model.fields,field_description:infos_fiscales.field_res_commune_create_uid
+msgid "Created by"
+msgstr "Créé par"
+
+#. module: infos_fiscales
+#: model:ir.model.fields,field_description:infos_fiscales.field_res_commune_create_date
+msgid "Created on"
+msgstr "Créé le"
+
+#. module: infos_fiscales
+#: model:ir.model.fields,field_description:infos_fiscales.field_res_commune_display_name
+msgid "Display Name"
+msgstr "Afficher le nom"
+
+#. module: infos_fiscales
+#: model:ir.model.fields,field_description:infos_fiscales.field_res_commune_id
+msgid "ID"
+msgstr "ID"
+
+#. module: infos_fiscales
+#: model:ir.model.fields,field_description:infos_fiscales.field_res_commune___last_update
+msgid "Last Modified on"
+msgstr "Dernière Modification le"
+
+#. module: infos_fiscales
+#: model:ir.model.fields,field_description:infos_fiscales.field_res_commune_write_uid
+msgid "Last Updated by"
+msgstr "Dernière mise à jour par"
+
+#. module: infos_fiscales
+#: model:ir.model.fields,field_description:infos_fiscales.field_res_commune_write_date
+msgid "Last Updated on"
+msgstr "Dernière mise à jour le"
+
+#. module: infos_fiscales
+#: model:ir.model.fields,help:infos_fiscales.field_res_commune_code
+msgid "Le code de la commune sur deux positions"
+msgstr "Le code de la commune sur deux positions"
+
+#. module: infos_fiscales
+#: model:ir.model,name:infos_fiscales.model_res_partner
+msgid "Partner"
+msgstr "Partenaire"
+
+#. module: infos_fiscales
+#: model:ir.ui.view,arch_db:infos_fiscales.res_partner_form_commune
+msgid "Street 2..."
+msgstr "Rue 2..."
+
+#. module: infos_fiscales
+#: model:ir.ui.view,arch_db:infos_fiscales.res_partner_form_commune
+msgid "Street..."
+msgstr "Rue..."
+
+#. module: infos_fiscales
+#: model:ir.model.fields,field_description:infos_fiscales.field_res_commune_state_id
+#: model:ir.ui.view,arch_db:infos_fiscales.res_partner_form_commune
+msgid "Wilaya"
+msgstr "Wilaya"
+
+#. module: infos_fiscales
+#: model:ir.ui.view,arch_db:infos_fiscales.res_partner_form_commune
+msgid "ZIP"
+msgstr "Code postal"
+
+#. module: infos_fiscales
+#: model:ir.model,name:infos_fiscales.model_res_commune
+msgid "res.commune"
+msgstr "res.commune"

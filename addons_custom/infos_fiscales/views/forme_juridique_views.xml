@@ -1,0 +1,66 @@
+<odoo>
+    <record id="view_forme_juridique_tree" model="ir.ui.view">
+        <field name="name">view.forme.juridique.tree</field>
+        <field name="model">forme.juridique</field>
+        <field name="arch" type="xml">
+            <tree string="Formes Juridiques">
+                <field name="name" />
+                <field name="full_name" />
+                <field name="description" />
+            </tree>
+        </field>
+    </record>
+
+    <record id="view_forme_juridique_form" model="ir.ui.view">
+        <field name="name">view.forme.juridique.form</field>
+        <field name="model">forme.juridique</field>
+        <field name="arch" type="xml">
+            <form>
+                <sheet>
+                    <div class="oe-title">
+                        <label for="name"/>
+                        <h1>
+                            <field name="name" />
+                        </h1>
+                    </div>
+                    <group string="Détail de la forme juridique">
+                        <field name="full_name" />
+                        <field name="description" />
+                    </group>
+                                        <!-- Add Chatter -->
+                    <div class="oe_chatter">
+                        <field name="message_follower_ids" widget="mail_followers"/>
+                        <field name="message_ids" widget="mail_thread"/>
+                    </div>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record id="view_forme_juridique_search" model="ir.ui.view">
+        <field name="name">view.forme.juridique.search</field>
+        <field name="model">forme.juridique</field>
+        <field name="arch" type="xml">
+            <search>
+                <!-- Search fields -->
+                <field name="name" />
+                <field name="full_name" />
+                <field name="description" />
+            </search>
+        </field>
+    </record>
+
+    <record id="action_forme_juridique" model="ir.actions.act_window">
+        <field name="name">forme juridique</field>
+        <field name="res_model">forme.juridique</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+
+        <!-- Parent menu: Configuration under Contacts-->
+    <menuitem
+        id="contacts_menu_configuration_forme_juridique"
+        name="Formes Juridiques"
+        parent="contacts.res_partner_menu_config"
+        sequence="4"
+        action="action_forme_juridique" />
+</odoo>

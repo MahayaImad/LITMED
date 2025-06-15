@@ -1,0 +1,7 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+infos_fiscales.access_forme_juridique,access_forme_juridique,infos_fiscales.model_forme_juridique,base.group_user,1,1,1,1
+access_res_commune,res.commune,model_res_commune,base.group_user,1,1,1,0
+access_res_country_state,res.country.state,model_res_country_state,base.group_user,1,1,1,0
+access_activity_code,activity_code,model_activity_code,base.group_user,1,1,1,0
+access_res_partner,res.partner,model_res_partner,base.group_user,1,1,1,0
+access_res_company,res.company,model_res_company,base.group_user,1,1,1,0
